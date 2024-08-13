@@ -1,0 +1,547 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+/* --primary-color: #14131a; */
+/* --secondry-color: #1c1b23; */
+
+:root {
+    --primary-color: #14131a;
+    --secondry-color: #1c1b23;;
+    --text-primary: #8b8a91;
+    --text-secondry: white;
+    --text-hover: #8b8a91a1;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* scrollbr{ */
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: var(--secondry-color);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #0e0e14;
+    border-radius: 9px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #252535;
+}
+/* } */
+body {
+    background-color: var(--primary-color);
+}
+
+header {
+    position: sticky;
+    top: 0px;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: end;
+}
+
+.nav1 {
+    z-index: 0;
+    display: flex;
+    height: auto;
+    width: auto;
+    background-color: var(--primary-color);
+}
+
+.nav {
+    margin: 25px;
+    margin-top: 55px;
+    display: flex;
+    justify-content: end;
+    background-color: var(--secondry-color);
+    width: 1000px;
+    border-radius: 9px;
+}
+
+.nava {
+    padding: 15px 20px;
+    text-decoration: none;
+    color: var(--text-primary);
+    font-size: 18px;
+}
+
+.nava:hover {
+    color: var(--text-hover);
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.nav button {
+    display: flex;
+    margin: 15px;
+    height: 30px;
+    width: auto;
+    padding: 0 7px;
+    background-color: rgb(22, 179, 22);
+    border: none;
+    color: var(--text-secondry);
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.nav button img {
+    margin: 5px;
+}
+
+.nav button a {
+    margin: 5px;
+    font-size: 14px;
+    text-decoration: none;
+    color: var(--text-secondry);
+}
+
+main {
+    display: flex;
+}
+
+.social {
+    display: flex;
+    flex-direction: column;
+    line-height: 30px;
+    width: 250px;
+    height: 370px;
+    margin: 40px;
+    margin-top: 0;
+    background-color: var(--secondry-color);
+    border-radius: 8px;
+    color: var(--text-primary);
+    position: sticky;
+    top: 140px;
+    left: 30px;
+    z-index: 1000;
+
+}
+
+.social a:hover {
+    color: var(--text-hover);
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.heading {
+    display: inline-block;
+    margin-top: 17px;
+    margin-left: 19px;
+    font-size: 20px;
+    height: fit-content;
+    width: max-content;
+}
+
+.atag {
+    height: fit-content;
+    margin-top: 30px;
+    margin-left: 27px;
+}
+
+.atag a {
+    text-decoration: none;
+    color: var(--text-primary);
+}
+
+#bgimg {
+    background-image: url(images/Freebie-GradientTextures-Preview-06.webp);
+    height: 150px;
+    width: 900px;
+    border-radius: 5px;
+    background-repeat: no-repeat;
+    margin: 45px;
+    margin-top: 35px;
+
+
+}
+
+#bgimg h2 {
+    padding: 50px;
+    padding-left: 70px;
+    padding-bottom: 0;
+    color: var(--text-secondry);
+    font-weight: bold;
+}
+
+#bgimg span {
+    color: var(--text-secondry);
+    font-size: 14px;
+    padding-left: 70px;
+    padding-top: 5px;
+}
+
+.aboutme {
+    height: auto;
+    width: 800px;
+    margin: 45px;
+    margin-left: 70px;
+    color: var(--text-secondry);
+    background-color: #1c1b2391;
+    padding: 20px;
+    border-radius: 9px;
+}
+
+.aboutme p {
+    padding: 5px;
+    font-weight: lighter;
+    font-size: 15px;
+}
+
+#services h2 {
+    color: var(--text-secondry);
+    margin: 45px;
+}
+
+.skills {
+    justify-content: center;
+    display: flex;
+    margin: 45px;
+    height: auto;
+    width: auto;
+    flex-direction: row;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 175px;
+    height: 300px;
+    margin: 35px;
+    margin-top: 15px;
+    background-color: var(--secondry-color);
+    border-radius: 10px;
+    color: var(--text-primary);
+}
+
+.card h3 {
+    margin-top: 12px;
+    margin-left: 15px;
+}
+
+.card span {
+    display: flex;
+    width: fit-content;
+    margin-left: 15px;
+    margin-top: 5px;
+    padding: 6px;
+    background-color: #14131a93;
+    border-radius: 6px;
+    font-size: 13px;
+    font-weight: lighter;
+}
+
+#projects h2 {
+    color: var(--text-secondry);
+    margin: 45px;
+}
+
+.project {
+    justify-content: center;
+    display: flex;
+    margin: 45px;
+    height: auto;
+    width: auto;
+    flex-direction: row;
+}
+
+.projectcard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 175px;
+    height: 300px;
+    border-radius: 7px;
+    background-color: var(--secondry-color);
+}
+
+.projectcard span {
+    color: var(--text-primary);
+    font-size: 17px;
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 600px) {
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    :root {
+        --primary-color: #14131a;
+        --secondry-color: #1c1b23;
+        --text-primary: #8b8a91;
+        --text-secondry: white;
+        --text-hover: #8b8a91a1;
+    }
+
+    body {
+        background-color: var(--primary-color);
+
+    }
+
+    header {
+        position: sticky;
+        top: 0px;
+        z-index: 1000;
+    }
+
+    nav {
+        display: flex;
+        justify-content: end;
+    }
+
+    .nav1 {
+        z-index: 0;
+        display: flex;
+        height: fit-content;
+        justify-content: center;
+        width: 100vw;
+        background-color: var(--primary-color);
+    }
+
+    .nav {
+        margin-top: 35px;
+        margin-bottom: 0;
+        display: flex;
+        justify-content: space-evenly;
+        background-color: var(--secondry-color);
+        width: 100vw;
+        border-radius: 9px;
+    }
+
+    .nava {
+        padding: 19px 0px 5px 17px;
+        text-decoration: none;
+        color: var(--text-primary);
+        font-size: 14px;
+    }
+
+    .nava:hover {
+        color: var(--text-hover);
+        cursor: pointer;
+        transition: 0.2s;
+    }
+
+    .nav button {
+        display: flex;
+        margin: 15px;
+        height: 30px;
+        width: 120px;
+        padding: 0 7px;
+        background-color: rgb(22, 179, 22);
+        border: none;
+        color: var(--text-secondry);
+        border-radius: 7px;
+        cursor: pointer;
+    }
+
+    .nav button img {
+        margin: 5px;
+    }
+
+    .nav button a {
+        margin: 2px;
+        margin-top: 6px;
+        font-size: 12px;
+        text-decoration: none;
+        color: var(--text-secondry);
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .social {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 70vw;
+        height: 50px;
+        margin-left: 53px;
+        margin-top: 8px;
+        background-color: var(--secondry-color);
+        border-radius: 8px;
+        color: var(--text-primary);
+        z-index: 1;
+
+    }
+
+    .social a:hover {
+        color: var(--text-hover);
+        cursor: pointer;
+        transition: 0.2s;
+    }
+
+    .heading {
+        font-size: 0;
+        height: 0;
+        width: 0;
+    }
+
+    .atag {
+        height: fit-content;
+        margin: 15px;
+    }
+
+    .atag a {
+        text-decoration: none;
+        font-size: .1px;
+    }
+
+    .right {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #bgimg {
+        background-image: url(images/Freebie-GradientTextures-Preview-06.webp);
+        height: 150px;
+        width: 100vw;
+        border-radius: 5px;
+        background-repeat: no-repeat;
+        margin-top: 15px;
+        margin-left: 0px;
+
+
+    }
+
+    #bgimg h2 {
+        padding: 30px;
+        padding-left: 35px;
+        padding-bottom: 0;
+        color: var(--text-secondry);
+        font-weight: bold;
+    }
+
+    #bgimg span {
+        color: var(--text-secondry);
+        font-size: 13px;
+        padding-left: 35px;
+    }
+
+    .aboutme {
+        height: auto;
+        width: 80vw;
+        margin: 25px;
+        margin-left: 35px;
+        color: var(--text-secondry);
+        background-color: #1c1b2391;
+        padding: 20px;
+        border-radius: 9px;
+    }
+
+    .aboutme p {
+        padding: 5px;
+        font-weight: lighter;
+        font-size: 14px;
+    }
+
+    #services h2 {
+        color: var(--text-secondry);
+        margin: 35px;
+        margin-bottom: 15px;
+    }
+
+    .skills {
+        display: flex;
+        justify-content: flex-start;
+        height: auto;
+        width: auto;
+        flex-direction: column;
+    }
+
+    .card {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 80vw;
+        height: 200px;
+        margin-top: 25px;
+        margin-left: -8px;
+        background-color: var(--secondry-color);
+        border-radius: 10px;
+        margin-bottom: 0;
+        color: var(--text-primary);
+    }
+
+    .card div {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-top: 15px;
+    }
+
+    .card h3 {
+        margin-top: 12px;
+        margin-left: 15px;
+    }
+
+    .card span {
+        display: flex;
+        width: fit-content;
+        height: fit-content;
+        margin-left: 15px;
+        margin-top: 5px;
+        padding: 6px;
+        background-color: #14131a93;
+        border-radius: 6px;
+        font-size: 13px;
+        font-weight: lighter;
+    }
+
+    #projects h2 {
+        color: var(--text-secondry);
+        margin-top: 10px;
+        margin-left: 30px;
+    }
+
+    .project {
+        display: flex;
+        justify-content: center;
+        margin: 45px;
+        height: auto;
+        width: auto;
+        flex-direction: row;
+    }
+
+    .projectcard {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 85vw;
+        height: 200px;
+        border-radius: 7px;
+        background-color: var(--secondry-color);
+    }
+
+    .projectcard span {
+        color: var(--text-primary);
+        font-size: 17px;
+        font-weight: bold;
+    }
+}
