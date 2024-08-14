@@ -62,8 +62,9 @@ nav {
     z-index: 0;
     display: flex;
     height: auto;
-    width: auto;
+    width: 100vw;
     background-color: var(--primary-color);
+    justify-content: end;
 }
 
 .nav {
