@@ -42,7 +42,7 @@ html {
 ::-webkit-scrollbar-thumb:hover {
     background: #252535;
 }
-
+/* } */
 body {
     background-color: var(--primary-color);
 }
