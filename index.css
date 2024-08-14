@@ -57,6 +57,12 @@ nav {
     display: flex;
     justify-content: end;
 }
+nav h1{
+    margin: 50px;
+    color: var(--text-secondry);
+    margin-bottom: 0px;
+    font-size: 40px;
+}
 
 .nav1 {
     z-index: 0;
