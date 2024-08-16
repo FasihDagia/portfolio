@@ -260,19 +260,19 @@ main {
 }
 
 .project {
-    justify-content: center;
-    display: flex;
+    padding: 150px;
+    padding-top: 0;
+    display: grid;
+    grid-gap: 50px;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
     margin: 45px;
     height: auto;
     width: auto;
-    flex-direction: row;
 }
 
 .projectcard {
-    /* display: flex; */
     justify-content: center;
-    /* align-items: center; */
-    /* text-align: center; */
     width: 225px;
     height: auto;
     border-radius: 7px;
@@ -555,11 +555,11 @@ main {
 
     .project {
         display: flex;
-        justify-content: center;
+        flex-direction: column;
+        align-items: center;
         margin: 45px;
         height: auto;
         width: auto;
-        flex-direction: row;
     }
 
     .projectcard {
@@ -578,7 +578,7 @@ main {
     }
 
     .projectcard img {
-        width: 280px;
-        margin-left: 14px;
+        width: 300px;
+        margin-left: 17px;
     }
 }
