@@ -358,7 +358,7 @@ main {
 
     .nav {
         margin-top: 35px;
-        margin-bottom: 0;
+        margin-bottom: 15px;
         display: flex;
         justify-content: space-evenly;
         background-color: var(--secondry-color);
